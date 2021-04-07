@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}Músicas{% endblock %}
+
+{% block content %}
+    <div class='col mx-auto text-center musicas'>
+        <h1 class='text-center mt-4'>Musicas</h1>
+        <h3 class='text-center'>Top 5 músicas mais escutadas</h3>
+
+        <h2 class='text-center mt-4'>505</h2>
+        <img src="{% static '/img/505.jpg'%}" alt='505'>
+        <hr>
+
+        <h2 class='text-center mt-4'>Fluorescent Adolescent</h2>
+        <img src='{% static "/img/Fluorescent Adolescent.jpg"%}'>
+        <hr>
+
+        <h2 class='text-center mt-4'>Arabella</h2>
+        <img src = '{% static "/img/arabella.png"%}'>
+        <hr>
+
+        <h2 class='text-center mt-4'>Do I Wanna Know</h2>
+        <img src = '{% static "/img/Do I Wanna Know.png" %}'>
+        <hr>
+
+        <h2 class='text-center mt-4'>Why’d You Only Call Me When You’re High</h2>
+        <img src = '{% static "/img/Why’d You Only Call Me When You’re High.png"%}'>
+    </div>
+{% endblock %}
+

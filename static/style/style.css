@@ -1,0 +1,35 @@
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%
+}
+nav{
+    font-size: 25px;
+    border-bottom: 15px solid #858585;
+}
+footer{
+    padding:20px;
+    background-color: #c2c2c2 !important;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    border-top: 15px solid #858585 !important;
+    color: #858585 !important;
+}
+.sombra{
+    box-shadow: 15px 0px #858585;
+}
+.musicas img{
+    height: auto;
+    width: 200px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius: 10px;
+}
+.musicas hr{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}

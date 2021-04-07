@@ -1,0 +1,32 @@
+<!-- extender o nosso arquivo 'base.html'-->
+{% extends 'base.html' %}
+
+<!-- carregar nossos arquivos staticos-->
+{% load static%}
+
+<!-- bloco de titulo da nossa pagina -->
+{% block title %}Sobre{% endblock %}
+
+<!-- bloco de conteudo da nossa pagina -->
+{% block content %}
+    <h1 class='text-center mt-4'>Arctic Monkeys</h1>
+    <div class ='col-6 fs-5 mx-auto mt-4'>
+        <p>
+            Arctic Monkeys é uma banda britânica de rock formada em 2002 nos subúrbios da cidade de Sheffield, na Inglaterra. O grupo é formado por Alex Turner (vocal, guitarra), Matt Helders (bateria, backing vocal), Jamie Cook (guitarra) e Nick O'Malley (baixo, backing vocal).
+        </p>
+        <p>
+            A banda já lançou seis álbuns de estúdio: Whatever People Say I Am, That's What I'm Not (2006), Favourite Worst Nightmare (2007), Humbug (2009), Suck It and See (2011), AM (2013) e Tranquility Base Hotel & Casino (2018). Seu primeiro álbum foi o disco de estreia que vendeu mais rápido na história das paradas de sucesso britânicas e, em 2013, a revista Rolling Stone o nomeou como o 30º melhor álbum de todos os tempos.
+        </p>
+        <p>
+            O grupo venceu sete prêmios Brit Awards – incluindo a categoria "Melhor Grupo Britânico" e três de "Melhor Álbum Britânico" – e foram também nomeados para três Grammy Awards.[3][4] Eles ainda venceram um Mercury Prize em 2006 com seu disco de estreia.[5] A banda já foi headliner de vários festivais pelo mundo, incluindo o de Glastonbury, em 2007 e 2013.
+        </p>
+        <p>
+            Arctic Monkeys foi uma das primeiras bandas a chamar a atenção pública na internet, causando um grande impacto em como os grupos musicais pelo mundo promovem seu trabalho.
+        </p>
+        <div class='col mx-auto text-center'>
+            <!-- carregar imagens apartir da pagina static -->
+            <img src="{% static '/img/2020_arcticmonkeys.jpg' %}" class="rounded-circle w-50 h-50 mt-4 mb-4 sombra" alt="banda">
+            <h6>Arctic Monkeys em faixa 'Arabella' do álbum Live At The Royal.</h6>
+        </div>
+    </div>
+{% endblock %}
